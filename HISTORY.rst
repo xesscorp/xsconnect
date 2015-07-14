@@ -3,6 +3,12 @@
 History
 -------
 
+0.1.2 (2015-07-14)
+---------------------
+
+* Added definition file for the StickIt! Grove board.
+* Removed travis testing requirement.
+
 0.1.1 (2015-06-01)
 ---------------------
 
