@@ -3,6 +3,11 @@
 History
 -------
 
+0.1.3 (2015-09-12)
+---------------------
+
+* Replaced explicit scripts with entrypoints.
+
 0.1.2 (2015-07-14)
 ---------------------
 

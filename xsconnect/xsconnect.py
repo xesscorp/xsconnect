@@ -23,7 +23,6 @@
 A script for generating pin location constraints for a peripheral board attached to a StickIt! motherboard.
 '''
 
-import sys
 from os import listdir
 from os.path import isfile, join, dirname, basename, splitext, realpath
 import difflib
@@ -81,7 +80,6 @@ def get_board_port_types(board_dir, board_name):
 
 def get_port_type(board_dir, board_name, port_name):
     '''Return the port type string for the given port name on the given board.'''
-    types = get_board_port_types(board_dir, board_name)
     for type in get_board_port_types(board_dir, board_name):
         names = get_board_port_names(board_dir, board_name, type)
         if port_name in names:

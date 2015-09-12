@@ -35,9 +35,20 @@ setup(
 #    packages=['xsconnect', ],
     packages=setuptools.find_packages(),
     package_dir={'xsconnect': 'xsconnect'},
-    include_package_data=True,
+    entry_points={
+        'console_scripts':[
+            'xsconn = xsconnect.xsconn:xsconn',
+            'xsconnect = xsconnect.xsconn:xsconn',
+        ],
+        'gui_scripts':[
+            'gxsconn = xsconnect.gxsconn:gxsconn',
+            'gxsconnect = xsconnect.gxsconn:gxsconn',
+        ],
+    },
+# Don't set include_package_data to True! Then it only includes data files under version control.
+#    include_package_data=True,
     package_data={'xsconnect': ['*.gif', '*.png']},
-    scripts=['scripts/xsconn.py', 'scripts/gxsconn.py', 'scripts/xsconn.cmd', 'scripts/gxsconn.cmd'],
+#    scripts=['scripts/xsconn.py', 'scripts/gxsconn.py', 'scripts/xsconn.cmd', 'scripts/gxsconn.cmd'],
     install_requires=requirements,
     license="MIT",
     zip_safe=False,
