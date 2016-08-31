@@ -12,7 +12,7 @@ xsconnect
 Generate pin assignment constraints for a given combination of XESS peripheral + motherboard + daughterboard.
 
 * Free software: MIT license
-* Documentation: https://xsconnect.readthedocs.org.
+* Documentation: https://xesscorp.github.com/xsconnect.
 
 Features
 --------
