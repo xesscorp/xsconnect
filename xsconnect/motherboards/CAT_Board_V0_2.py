@@ -1,5 +1,5 @@
 brd = {
-    'name': ('CAT Board V1.0'),
+    'name': ('CAT Board V0.2'),
     'port': {
         'pmod': {
             'pm2': {
